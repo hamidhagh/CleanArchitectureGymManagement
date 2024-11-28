@@ -15,7 +15,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Infrastructure", "src\GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{11778F99-7FA2-4A63-9C11-DE74C265AB84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Api", "src\GymManagement.Api\GymManagement.Api.csproj", "{D330EAA9-7487-47ED-AFE3-7F443462E6DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Api", "src\GymManagement.Api\GymManagement.Api.csproj", "{D330EAA9-7487-47ED-AFE3-7F443462E6DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCommon", "tests\TestCommon\TestCommon.csproj", "{306B66D4-C8CB-4A34-B022-6A23AA78E99D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Domain.UnitTests", "tests\GymManagement.Domain.UnitTests\GymManagement.Domain.UnitTests.csproj", "{028FF0F7-BDBF-4887-BE11-2C848B75C96D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application.UnitTests", "tests\GymManagement.Application.UnitTests\GymManagement.Application.UnitTests.csproj", "{118570D5-8553-4229-890A-71BA26B904F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application.SubcutaneousTests", "tests\GymManagement.Application.SubcutaneousTests\GymManagement.Application.SubcutaneousTests.csproj", "{078C329F-4D88-4083-80A3-13A493EEAE40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Api.IntegrationTests", "tests\GymManagement.Api.IntegrationTests\GymManagement.Api.IntegrationTests.csproj", "{029872D9-3119-4E9A-99FC-12E2F92F14A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D} = {306B66D4-C8CB-4A34-B022-6A23AA78E99D}
+		{D330EAA9-7487-47ED-AFE3-7F443462E6DE} = {D330EAA9-7487-47ED-AFE3-7F443462E6DE}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +57,26 @@ Global
 		{D330EAA9-7487-47ED-AFE3-7F443462E6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D330EAA9-7487-47ED-AFE3-7F443462E6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D330EAA9-7487-47ED-AFE3-7F443462E6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028FF0F7-BDBF-4887-BE11-2C848B75C96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028FF0F7-BDBF-4887-BE11-2C848B75C96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028FF0F7-BDBF-4887-BE11-2C848B75C96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028FF0F7-BDBF-4887-BE11-2C848B75C96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118570D5-8553-4229-890A-71BA26B904F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118570D5-8553-4229-890A-71BA26B904F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118570D5-8553-4229-890A-71BA26B904F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118570D5-8553-4229-890A-71BA26B904F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078C329F-4D88-4083-80A3-13A493EEAE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078C329F-4D88-4083-80A3-13A493EEAE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078C329F-4D88-4083-80A3-13A493EEAE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078C329F-4D88-4083-80A3-13A493EEAE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029872D9-3119-4E9A-99FC-12E2F92F14A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029872D9-3119-4E9A-99FC-12E2F92F14A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029872D9-3119-4E9A-99FC-12E2F92F14A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029872D9-3119-4E9A-99FC-12E2F92F14A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +87,11 @@ Global
 		{D043A040-5353-4F90-9438-81F2DC388A92} = {395E55B5-21A0-4CB8-B36B-404120899AF0}
 		{11778F99-7FA2-4A63-9C11-DE74C265AB84} = {395E55B5-21A0-4CB8-B36B-404120899AF0}
 		{D330EAA9-7487-47ED-AFE3-7F443462E6DE} = {395E55B5-21A0-4CB8-B36B-404120899AF0}
+		{306B66D4-C8CB-4A34-B022-6A23AA78E99D} = {DAA222CB-9A0C-4831-8E56-1EEC2E345CCC}
+		{028FF0F7-BDBF-4887-BE11-2C848B75C96D} = {DAA222CB-9A0C-4831-8E56-1EEC2E345CCC}
+		{118570D5-8553-4229-890A-71BA26B904F8} = {DAA222CB-9A0C-4831-8E56-1EEC2E345CCC}
+		{078C329F-4D88-4083-80A3-13A493EEAE40} = {DAA222CB-9A0C-4831-8E56-1EEC2E345CCC}
+		{029872D9-3119-4E9A-99FC-12E2F92F14A3} = {DAA222CB-9A0C-4831-8E56-1EEC2E345CCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71684EC8-BF21-4592-8A85-C5C37399E56B}
